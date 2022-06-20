@@ -95,9 +95,13 @@ st.image(image, use_column_width=True)
 st.markdown("""
 # Bioactivity Prediction App for target protein, Hepatocyte Growth Factor Receptor (HGFR)
 
-The hepatocyte growth factor receptor (HGFR) is a promising target in cancer therapy. This app allows users to determine
-if a molecule of interest has the potential to be a drug candidate by predicting the bioactivity towards inhibiting 
-the HGFR. The app accepts .txt files containing the canonical simplified molecular-input line-entry system (SMILES) 
+Abnormal expression of hepatocyte growth factor receptor (HGFR) has been associated with tumors with high cell proliferation rate, 
+cell dissociation, tumor aggressiveness, and invasiveness. Literature has supported it as being a promising target in cancer therapy, however the protein's 
+characteristic of therapeutic resistance is still a barrier for developing effective drugs that can inhibit it. Discovery of novel compounds/molecules with 
+promising bioactivity with HGFR is needed. 
+
+This app allows users to determine if a molecule of interest has the potential to be a drug candidate by predicting the 
+bioactivity towards inhibiting the HGFR. The app accepts .txt files containing the canonical simplified molecular-input line-entry system (SMILES) 
 notation of the molecule(s) of interest and respective ChEMBLID. Results will return predicted pIC50 value(s) of the molecule(s)
 of interest.
 
@@ -105,7 +109,7 @@ A note on predicted pIC50 values: the prediction model was trained with consider
 
 ---
 **Acknowledgement**
-- App built in 'python' + 'streamlit' by **Sara Then** with project inspiration and guidance from [Chanin Nantasenamat/Data Professor] (http://youtube.com/dataprofessor) Bioinformatics series. 
+- App built in 'python' + 'streamlit' by **Sara Then** with project inspiration and guidance from [Chanin Nantasenamat/Data Professor](http://youtube.com/dataprofessor) Bioinformatics series. 
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) 
 - Details of the project and code are available on the github repo (https://github.com/sara-then/HGF-drugdiscovery-project)
 ---
