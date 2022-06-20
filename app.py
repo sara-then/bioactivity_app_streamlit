@@ -109,14 +109,14 @@ A note on predicted pIC50 values: the prediction model was trained with consider
 
 ---
 **Acknowledgement**
-- App built in 'python' + 'streamlit' by **Sara Then** with project inspiration and guidance from [Chanin Nantasenamat/Data Professor](http://youtube.com/dataprofessor) Bioinformatics series. 
+- App built in 'python' + 'streamlit' by **Sara Then** with project inspiration and guidance from [Chanin Nantasenamat/Data Professor](http://youtube.com/dataprofessor)'s Bioinformatics series. 
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) 
 - Details of the project and code are available on the github repo (https://github.com/sara-then/HGF-drugdiscovery-project)
 ---
 """)
 
 # sidebar
-with st.sidebar.header('Upload your CSV data'):
+with st.sidebar.header('Upload your molecule .txt file'):
     uploaded_file = st.sidebar.file_uploader("Upload your input file", type=['txt'])
     st.sidebar.markdown("""
 [Example input file](https://raw.githubusercontent.com/dataprofessor/bioactivity-prediction-app/main/example_acetylcholinesterase.txt)
@@ -139,7 +139,7 @@ if st.sidebar.button('Predict'):
     st.write(desc.shape)
 
     # Read descriptor list used in previously built model
-    st.header('**Subset of descriptors from previously built model**')
+    st.header('**Subset of descriptors from built model**')
     Xlist = list(pd.read_csv('descriptor_list.csv').columns)
     desc_subset = desc[Xlist]
     st.write(desc_subset)
